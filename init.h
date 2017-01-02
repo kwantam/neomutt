@@ -2049,6 +2049,16 @@ struct option_t MuttVars[] = {
    ** .pp
    ** This variable specifies the default tags applied to messages stored to the mutt record.
    */
+  { "nm_show_folder", DT_BOOL, R_NONE, OPTNOTMUCHSHOWFOLDER, 1 },
+  /*
+   ** .pp
+   ** This variable specifies whether to show a fake ``Folder:'' header when displaying notmuch messages.
+   */
+  { "nm_show_tags", DT_BOOL, R_NONE, OPTNOTMUCHSHOWTAGS, 1 },
+  /*
+   ** .pp
+   ** This variable specifies whether to show a fake ``Tags:'' header when displaying notmuch messages.
+   */
 #endif
   { "pager",		DT_PATH, R_NONE, UL &Pager, UL "builtin" },
   /*
